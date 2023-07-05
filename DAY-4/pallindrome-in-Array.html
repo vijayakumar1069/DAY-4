@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      (function()
+      {
+        let m=["vijay","madam","good","dad","malayalam"];
+        let sol = [];
+          for (var i = 0; i < m.length; i++) {
+            let a = m[i];
+            if (a.length == 1) {
+              continue;
+            }
+            let j = 0;
+            let k = a.length - 1;
+            let b = true;
+            while (j < k) {
+              if (a.charAt(j) != a.charAt(k)) {
+                b = false;
+                break;
+              }
+              j++;
+              k--;
+            }
+            if (b == true) {
+              sol.push(a);
+            }
+          }
+          console.log(sol) ;
+          console.log("hiii")
+      }())
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var change=(str)=>{
+        let  res=" ";
+        for(let i=0;i<str.length;i++)
+        {
+            
+            res+=str[i].charAt(0).toUpperCase()+ str[i].slice(1)+" ";
+        }
+        return res
+    }
+        let str=["hello","and","welcome","to","study"];
+         var res=change(str);
+
+        console.log(res);
+    </script>
+    
+</body>
+</html>
